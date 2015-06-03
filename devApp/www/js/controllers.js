@@ -17,6 +17,7 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
+  
   var deviceInfo = cordova.require("cordova/plugin/DeviceInformation");
   deviceInfo.get(function(result) {
     console.log("result = " + result);
